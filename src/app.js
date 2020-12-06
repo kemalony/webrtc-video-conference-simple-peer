@@ -9,9 +9,9 @@ const https = require('https')
 
 // insert your own ssl certificate and keys
 const options = {
-    key: fs.readFileSync('./sslforfree2/private.key'),
-    cert: fs.readFileSync('./sslforfree2/certificate.crt'),
-    ca: fs.readFileSync('./sslforfree2/ca_bundle.crt'),
+    key: fs.readFileSync('./src/sslforfree2/private.key'),
+    cert: fs.readFileSync('./src/sslforfree2/certificate.crt'),
+    ca: fs.readFileSync('./src/sslforfree2/ca_bundle.crt'),
 }
 
 const port = process.env.PORT || 3012
